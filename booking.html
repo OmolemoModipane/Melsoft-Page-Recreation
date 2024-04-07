@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melsoft</title>
+  </head>
+  <body>
+    <div class="container">
+      <style>
+        body {
+          background-image: url(https://i.pinimg.com/564x/a6/e5/03/a6e503b73c5e4a1782b802b16e0a2486.jpg);
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+          width: 100%; /* Full width */
+          padding: 6px; /* Some padding */
+          border: 1px solid blue; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 6px; /* Bottom margin */
+          resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        input[type="submit"] {
+          background-color: blue;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type="submit"]:hover {
+          background-color: darkblue;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+          border-radius: 5px;
+          background-color: whitesmoke;
+          padding: 20px;
+
+          width: 30%;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      </style>
+      <form action="action_page.php">
+        <label for="fname">Full Names</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="full names"
+        />
+
+        <label for="lname">Email</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="email address"
+        />
+
+        <label for="subject">Reason For Call</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder=""
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Book A Call" />
+      </form>
+    </div>
+  </body>
+</html>
